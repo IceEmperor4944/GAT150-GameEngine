@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C72326D3-8E49-4526-83DC-12FDB6DF1D11}|Game\\Game.vcxproj|C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Game\\Source\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72326D3-8E49-4526-83DC-12FDB6DF1D11}|Game\\Game.vcxproj|solutionrelative:Game\\Source\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Game\\Source\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Game\\Source\\Main.cpp",
+              "RelativeDocumentMoniker": "..\\CSC196-GameEngine\\Game\\Source\\Main.cpp",
+              "ToolTip": "C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Game\\Source\\Main.cpp",
+              "RelativeToolTip": "..\\CSC196-GameEngine\\Game\\Source\\Main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-29T16:11:19.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Game\\Source\\Main.cpp",
+              "RelativeDocumentMoniker": "Game\\Source\\Main.cpp",
+              "ToolTip": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Game\\Source\\Main.cpp",
+              "RelativeToolTip": "Game\\Source\\Main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-29T16:10:38.205Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
