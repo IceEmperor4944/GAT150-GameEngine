@@ -1,14 +1,2 @@
-﻿  Actor.cpp
-  Audio.cpp
-  Engine.cpp
-  ETime.cpp
-  Font.cpp
-  Input.cpp
-  Model.cpp
-  Particle.cpp
-  ParticleSystem.cpp
-  Renderer.cpp
-  Scene.cpp
-  Text.cpp
-  Generating Code...
+﻿  Engine.cpp
   Engine.vcxproj -> C:\Users\nsears\source\repos\GAT150-GameEngine\Bin\Engine\Debug\Engine.lib

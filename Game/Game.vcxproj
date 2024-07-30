@@ -141,11 +141,6 @@
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\CSC196-GameEngine\Engine\Engine.vcxproj">
-      <Project>{539dfa82-6555-4142-972a-5936fd488739}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

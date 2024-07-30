@@ -3,24 +3,34 @@
 #include <iostream>
 #include <cstdlib>
 #include <vector>
+#include <cassert>
 
 int main(int argc, char* argv[]) {
-	g_engine.Initilize();
+	std::unique_ptr<Engine> engine = std::make_unique<Engine>();
+	engine->Initialize();
 
-	while (!g_engine.IsQuit())
+//#ifdef _DEBUG
+//	std::cout << "debug\n";
+//#endif
+//
+//	int i = 5;
+//	assert(i == 5);
+//
+//	int* p = nullptr;
+//	//assert(p);
+
+	while (!engine->IsQuit())
 	{
-		g_engine.Update();
+		engine->Update();
 
 		// clear screen
-		RENDERER.SetColor(0, 0, 0, 0);
-		RENDERER.BeginFrame();
+		engine->GetRenderer().SetColor(0, 0, 0, 0);
+		engine->GetRenderer().BeginFrame();
 
-		PS.Draw(RENDERER);
-
-		RENDERER.EndFrame();
+		engine->GetRenderer().EndFrame();
 	}
 
-	g_engine.Shutdown();
+	engine->Shutdown();
 
 	return 0;
 }

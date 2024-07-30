@@ -18,18 +18,12 @@
 #include <SDL.h>
 #include <memory>
 
-#define RENDERER g_engine.GetRenderer()
-#define INPUT g_engine.GetInput()
-#define AUDIO g_engine.GetAudio()
-#define TIME g_engine.GetTime()
-#define PS g_engine.GetPS()
-
 class Engine {
 public:
 	Engine() = default;
 	~Engine() = default;
 
-	bool Initilize();
+	bool Initialize();
 	void Shutdown();
 
 	void Update();
@@ -53,5 +47,3 @@ private:
 
 	std::unique_ptr<ParticleSystem> m_particleSystem;
 };
-
-extern Engine g_engine;
