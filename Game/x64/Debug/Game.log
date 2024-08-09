@@ -1,9 +1,1 @@
-﻿  Main.cpp
-Main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Renderer::BeginFrame(void)" (?BeginFrame@Renderer@@QEAAXXZ) referenced in function SDL_main
-Main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Renderer::EndFrame(void)" (?EndFrame@Renderer@@QEAAXXZ) referenced in function SDL_main
-Main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Renderer::SetColor(unsigned char,unsigned char,unsigned char,unsigned char)" (?SetColor@Renderer@@QEAAXEEEE@Z) referenced in function SDL_main
-Main.obj : error LNK2019: unresolved external symbol "public: bool __cdecl Engine::Initialize(void)" (?Initialize@Engine@@QEAA_NXZ) referenced in function SDL_main
-Main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Engine::Shutdown(void)" (?Shutdown@Engine@@QEAAXXZ) referenced in function SDL_main
-Main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Engine::Update(void)" (?Update@Engine@@QEAAXXZ) referenced in function SDL_main
-MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\Users\nsears\source\repos\GAT150-GameEngine\x64\Debug\Game.exe : fatal error LNK1120: 7 unresolved externals
+﻿  Game.vcxproj -> C:\Users\nsears\source\repos\GAT150-GameEngine\x64\Debug\Game.exe

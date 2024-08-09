@@ -1,22 +1,50 @@
 #pragma once
-#include "Renderer.h"
-#include "Input.h"
-#include "Audio.h"
 
-#include "ETime.h"
+//CORE
+#include "Core/EAssert.h"
+#include "Core/EFile.h"
+#include "Core/ETime.h"
+#include "Core/Json.h"
+#include "Core/Singleton.h"
+#include "Core/Factory.h"
 
-#include "Vector2.h"
-#include "Random.h"
-#include "MathUtils.h"
+//SYSTEMS
+//RENDERER
+#include "Renderer/Renderer.h"
+#include "Renderer/Particle.h"
+#include "Renderer/ParticleSystem.h"
+#include "Renderer/Text.h"
+#include "Renderer/Font.h"
+#include "Renderer/Model.h"
+#include "Renderer/Texture.h"
 
-#include "Particle.h"
-#include "ParticleSystem.h"
-#include "Model.h"
-#include "Transform.h"
+//INPUT
+#include "Input/Input.h"
+
+//AUDIO
+#include "Audio/Audio.h"
+
+//MATH
+#include "Math/Vector2.h"
+#include "Math/Random.h"
+#include "Math/MathUtils.h"
+#include "Math/Transform.h"
+
+//FRAMEWORK
+#include "Framework/Actor.h"
+#include "Framework/Scene.h"
+
+//RESOURCES
+#include "Resources/Resource.h"
+#include "Resources/ResourceManager.h"
+
+//COMPONENTS
+#include "Components/TextureComponent.h"
 
 #include <fmod.hpp>
 #include <SDL.h>
 #include <memory>
+#include <cassert>
 
 class Engine {
 public:
