@@ -25,9 +25,11 @@
     <ClInclude Include="Source\Components\TextureComponent.h" />
     <ClInclude Include="Source\Core\EAssert.h" />
     <ClInclude Include="Source\Core\EFile.h" />
+    <ClInclude Include="Source\Core\EString.h" />
     <ClInclude Include="Source\Core\ETime.h" />
     <ClInclude Include="Source\Core\Factory.h" />
     <ClInclude Include="Source\Core\Json.h" />
+    <ClInclude Include="Source\Core\Serializable.h" />
     <ClInclude Include="Source\Core\Singleton.h" />
     <ClInclude Include="Source\Engine.h" />
     <ClInclude Include="Source\Framework\Actor.h" />
@@ -55,12 +57,15 @@
     <ClCompile Include="Source\Components\TextureComponent.cpp" />
     <ClCompile Include="Source\Core\EAssert.cpp" />
     <ClCompile Include="Source\Core\EFile.cpp" />
+    <ClCompile Include="Source\Core\EString.cpp" />
     <ClCompile Include="Source\Core\ETime.cpp" />
     <ClCompile Include="Source\Core\Json.cpp" />
     <ClCompile Include="Source\Engine.cpp" />
     <ClCompile Include="Source\Framework\Actor.cpp" />
+    <ClCompile Include="Source\Framework\Object.cpp" />
     <ClCompile Include="Source\Framework\Scene.cpp" />
     <ClCompile Include="Source\Input\Input.cpp" />
+    <ClCompile Include="Source\Math\Transform.cpp" />
     <ClCompile Include="Source\Renderer\Font.cpp" />
     <ClCompile Include="Source\Renderer\Model.cpp" />
     <ClCompile Include="Source\Renderer\Particle.cpp" />
@@ -70,7 +75,8 @@
     <ClCompile Include="Source\Renderer\Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\Build\Assets\text.txt" />
+    <None Include="..\Build\Assets\Scenes\scene.json" />
+    <None Include="cpp.hint" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

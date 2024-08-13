@@ -16,14 +16,19 @@ int main(int argc, char* argv[]) {
 
 	// !! this code is not neccessary, it just shows the contents of the file !!
 	std::string buffer;
-	File::ReadFile("text.txt", buffer);
+	File::ReadFile("Scenes/scene.json", buffer);
 	// show the contents of the json file
 	std::cout << buffer << std::endl;
 
 	// create json document from the json file contents
 	rapidjson::Document document;
-	Json::Load("text.txt", document);
+	Json::Load("Scenes/scene.json", document);
 
+	std::unique_ptr<Scene> scene = std::make_unique<Scene>(engine.get());
+	scene->Read(document);
+	scene->Initialize();
+
+	/*
 	// read the data from the json
 	std::string name;
 	int age;
@@ -43,32 +48,29 @@ int main(int argc, char* argv[]) {
 	std::cout << name << " " << age << " " << speed << " " << isAwake << std::endl;
 	std::cout << position.x << " " << position.y << std::endl;
 	std::cout << color.r << " " << color.g << " " << color.b << " " << color.a << std::endl;
+	*/
 	{
-		res_t<Texture> texture = ResourceManager::Instance().Get<Texture>("strawberry.bmp", engine->GetRenderer());
-		res_t<Font> font = ResourceManager::Instance().Get<Font>("fonts/arcadeclassic.ttf", 12);
+		/*res_t<Texture> texture = ResourceManager::Instance().Get<Texture>("Images/strawberry.bmp", engine->GetRenderer());
+		res_t<Font> font = ResourceManager::Instance().Get<Font>("Fonts/arcadeclassic.ttf", 12);
 		std::unique_ptr<Text> text = std::make_unique<Text>(font);
 		text->Create(engine->GetRenderer(), "Hello!", { 1, 1, 0, 1 });
 
-		Transform t{ { 30, 30 } };
 		auto actor = Factory::Instance().Create<Actor>(Actor::GetTypeName());
-		actor->SetTransform(Transform{ {20,20} });
+		actor->transform = Transform{ {30, 30} };
 		auto component = Factory::Instance().Create<TextureComponent>(TextureComponent::GetTypeName());
 		component->texture = texture;
-		actor->AddComponent(std::move(component));
+		actor->AddComponent(std::move(component));*/
 
-		while (!engine->IsQuit())
-		{
+		while (!engine->IsQuit()) {
+			// update
 			engine->Update();
+			scene->Update(engine->GetTime().GetDeltaTime());
 
-			actor->Update(engine->GetTime().GetDeltaTime());
-
-			// clear screen
+			// render
 			engine->GetRenderer().SetColor(0, 0, 0, 0);
 			engine->GetRenderer().BeginFrame();
 
-			text->Draw(engine->GetRenderer(), 200, 200);
-			//engine->GetRenderer().DrawTexture(texture.get(), 50, 50, 0);
-			actor->Draw(engine->GetRenderer());
+			scene->Draw(engine->GetRenderer());
 
 			engine->GetRenderer().EndFrame();
 		}

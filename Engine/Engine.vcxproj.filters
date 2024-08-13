@@ -90,6 +90,15 @@
     <ClCompile Include="Source\Core\Json.cpp">
       <Filter>Source\Core</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Core\EString.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Math\Transform.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Framework\Object.cpp">
+      <Filter>Source\Framework</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Core\EAssert.h">
@@ -182,10 +191,17 @@
     <ClInclude Include="Source\Core\Json.h">
       <Filter>Source\Core</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Core\EString.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Serializable.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\Build\Assets\text.txt">
+    <None Include="cpp.hint" />
+    <None Include="..\Build\Assets\Scenes\scene.json">
       <Filter>Resource Files</Filter>
-    </Text>
+    </None>
   </ItemGroup>
 </Project>

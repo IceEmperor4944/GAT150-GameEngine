@@ -7,6 +7,7 @@
 #include "Core/Json.h"
 #include "Core/Singleton.h"
 #include "Core/Factory.h"
+#include "Core/EString.h"
 
 //SYSTEMS
 //RENDERER

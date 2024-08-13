@@ -2,12 +2,15 @@ C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Audio\Audio.cpp;C:\
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\TextureComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\TextureComponent.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Core\EAssert.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\EAssert.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Core\EFile.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\EFile.obj
+C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Core\EString.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\EString.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Core\ETime.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\ETime.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Core\Json.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Json.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Engine.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Engine.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Framework\Actor.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Actor.obj
+C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Framework\Object.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Object.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Framework\Scene.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Scene.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Input\Input.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Input.obj
+C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Math\Transform.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Transform.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Renderer\Font.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Font.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Renderer\Model.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Model.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Renderer\Particle.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Particle.obj
