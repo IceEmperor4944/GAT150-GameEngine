@@ -25,11 +25,13 @@ public:
 
 	int GetWidth() const { return m_width; }
 	int GetHeight() const { return m_height; }
-	SDL_Renderer* GetRenderer() const { return m_renderer; }
-
-	friend class Texture;
+	
 	void DrawTexture(class Texture* texture, float x, float y, float angle = 0.0f);
-private:
+	void DrawTexture(class Texture* texture, const struct Transform& transform, bool hflip = false);
+	
+	friend class Text;
+	friend class Texture;
+protected:
 	SDL_Window* m_window{ nullptr };
 	SDL_Renderer* m_renderer{ nullptr };
 

@@ -26,14 +26,15 @@
 #include "Audio/Audio.h"
 
 //MATH
-#include "Math/Vector2.h"
 #include "Math/Random.h"
 #include "Math/MathUtils.h"
+#include "Math/Vector2.h"
 #include "Math/Transform.h"
 
 //FRAMEWORK
 #include "Framework/Actor.h"
 #include "Framework/Scene.h"
+#include "Framework/Game.h"
 
 //RESOURCES
 #include "Resources/Resource.h"
@@ -41,6 +42,7 @@
 
 //COMPONENTS
 #include "Components/TextureComponent.h"
+#include "Components/EnginePhysicsComponent.h"
 
 #include <fmod.hpp>
 #include <SDL.h>

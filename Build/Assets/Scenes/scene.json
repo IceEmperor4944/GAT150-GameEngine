@@ -11,6 +11,15 @@
         {
           "type": "TextureComponent",
           "textureName": "images/strawberry.png"
+        },
+        {
+          "type": "EnginePhysicsComponent",
+          "velocity": [ 100, 0 ],
+          "damping": 0.5
+        },
+        {
+          "type": "PlayerComponent",
+          "speed":  100
         }
       ]
     },
@@ -18,7 +27,7 @@
       "name": "enemy",
       "transform": {
         "position": [ 260, 360 ],
-        "rotation": 45,
+        "rotation": 90,
         "scale": 1
       },
       "components": [

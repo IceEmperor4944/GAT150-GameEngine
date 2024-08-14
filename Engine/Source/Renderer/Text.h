@@ -13,6 +13,7 @@ public:
 	bool Create(Renderer& renderer, const std::string& text, const Color& color);
 	void Draw(Renderer& renderer, int x, int y);
 
+	friend class Renderer;
 	friend class Font;
 private:
 	res_t<Font> m_font;

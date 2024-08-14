@@ -21,7 +21,7 @@ bool Texture::Load(const std::string& filename, Renderer& renderer)
     }
 
     // create texture from surface, texture is a friend class of renderer
-    m_texture = SDL_CreateTextureFromSurface(renderer.GetRenderer(), surface);
+    m_texture = SDL_CreateTextureFromSurface(renderer.m_renderer, surface);
     // once texture is created, surface can be freed up
     SDL_FreeSurface(surface);
     if (!m_texture)

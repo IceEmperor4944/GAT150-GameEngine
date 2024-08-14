@@ -21,7 +21,7 @@ bool Text::Create(Renderer& renderer, const std::string& text, const Color& colo
 	}
 
 	// create a texture from the surface, only textures can render to the renderer
-	m_texture = SDL_CreateTextureFromSurface(renderer.GetRenderer(), surface);
+	m_texture = SDL_CreateTextureFromSurface(renderer.m_renderer, surface);
 	if (surface == nullptr)
 	{
 		SDL_FreeSurface(surface);
@@ -46,5 +46,5 @@ void Text::Draw(Renderer& renderer, int x, int y)
 
 	// copy the texture onto the renderer
 	SDL_Rect rect{ x, y, width, height };
-	SDL_RenderCopy(renderer.GetRenderer(), m_texture, NULL, &rect);
+	SDL_RenderCopy(renderer.m_renderer, m_texture, NULL, &rect);
 }
