@@ -3,9 +3,12 @@
 #include "../Math/Vector2.h"
 #include <string>
 
+struct SDL_Texture;
+
 class Texture : public Resource {
 public:
 	Texture() = default;
+	Texture(SDL_Texture* texture) : m_texture{ texture } {}
 	~Texture();
 
 	bool Create(std::string name, ...) override;
@@ -15,5 +18,5 @@ public:
 
 	friend class Renderer;
 private:
-	struct SDL_Texture* m_texture{ nullptr };
+	SDL_Texture* m_texture{ nullptr };
 };

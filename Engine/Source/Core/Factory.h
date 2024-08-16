@@ -38,6 +38,8 @@ inline std::unique_ptr<T> Factory::Create(const std::string& name) {
 	if (m_registry.find(name) != m_registry.end()) {
 		return std::unique_ptr<T>(dynamic_cast<T*>(m_registry[name]->Create().release()));
 	}
-	
+
+	std::cerr << "Could not create factor object: \"" << name << "\"" << std::endl;
+
 	return std::unique_ptr<T>();
 }

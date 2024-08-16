@@ -10,6 +10,7 @@ int main(int argc, char* argv[]) {
 	Factory::Instance().Register<TextureComponent>(TextureComponent::GetTypeName());
 	Factory::Instance().Register<EnginePhysicsComponent>(EnginePhysicsComponent::GetTypeName());
 	Factory::Instance().Register<PlayerComponent>(PlayerComponent::GetTypeName());
+	Factory::Instance().Register<TextComponent>(TextComponent::GetTypeName());
 
 	std::unique_ptr<Engine> engine = std::make_unique<Engine>();
 	engine->Initialize();
@@ -31,43 +32,17 @@ int main(int argc, char* argv[]) {
 	scene->Read(document);
 	scene->Initialize();
 
-	/*
-	// read the data from the json
-	std::string name;
-	int age;
-	float speed;
-	bool isAwake;
-	Vector2 position;
-	Color color;
-
-	READ_DATA(document, name);
-	READ_DATA(document, age);
-	READ_DATA(document, speed);
-	READ_DATA(document, isAwake);
-	READ_DATA(document, position);
-	READ_DATA(document, color);
-
-	// show the data
-	std::cout << name << " " << age << " " << speed << " " << isAwake << std::endl;
-	std::cout << position.x << " " << position.y << std::endl;
-	std::cout << color.r << " " << color.g << " " << color.b << " " << color.a << std::endl;
-	*/
 	{
-		/*res_t<Texture> texture = ResourceManager::Instance().Get<Texture>("Images/strawberry.bmp", engine->GetRenderer());
-		res_t<Font> font = ResourceManager::Instance().Get<Font>("Fonts/arcadeclassic.ttf", 12);
-		std::unique_ptr<Text> text = std::make_unique<Text>(font);
-		text->Create(engine->GetRenderer(), "Hello!", { 1, 1, 0, 1 });
-
-		auto actor = Factory::Instance().Create<Actor>(Actor::GetTypeName());
-		actor->transform = Transform{ {30, 30} };
-		auto component = Factory::Instance().Create<TextureComponent>(TextureComponent::GetTypeName());
-		component->texture = texture;
-		actor->AddComponent(std::move(component));*/
-
 		while (!engine->IsQuit()) {
 			// update
 			engine->Update();
 			scene->Update(engine->GetTime().GetDeltaTime());
+
+			auto* actor = scene->GetActor<Actor>("text");
+			if (actor) {
+				actor->transform.scale = 5 * (1.0f + Math::Cos(engine->GetTime().GetTime()));
+				actor->transform.rotation += 90 * engine->GetTime().GetDeltaTime();
+			}
 
 			// render
 			engine->GetRenderer().SetColor(0, 0, 0, 0);
@@ -79,6 +54,7 @@ int main(int argc, char* argv[]) {
 		}
 	}
 
+	scene->RemoveAll();
 	ResourceManager::Instance().Clear();
 	engine->Shutdown();
 

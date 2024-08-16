@@ -20,5 +20,5 @@ public:
 	virtual void Deactivate() { isActive = false; }
 public:
 	std::string name;
-	bool isActive = false;
+	bool isActive = true;
 };

@@ -1,6 +1,7 @@
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Audio\Audio.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Audio.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\EnginePhysicsComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\EnginePhysicsComponent.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\PhysicsComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\PhysicsComponent.obj
+C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\TextComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\TextComponent.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\TextureComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\TextureComponent.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Core\EAssert.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\EAssert.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Core\EFile.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\EFile.obj

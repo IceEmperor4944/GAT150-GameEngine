@@ -36,6 +36,23 @@
           "textureName": "images/strawberry.png"
         }
       ]
+    },
+    {
+      "name": "text",
+      "transform": {
+        "position": [ 500, 500 ],
+        "rotation": 0,
+        "scale": 5
+      },
+      "components": [
+        {
+          "type": "TextComponent",
+          "text": "Hello World!",
+          "fontName": "fonts/arcadeclassic.ttf",
+          "fontSize": 24,
+          "color": [ 0, 1, 0, 1 ]
+        }
+      ]
     }
   ]
 }
