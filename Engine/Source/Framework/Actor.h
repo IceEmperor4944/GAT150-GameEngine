@@ -6,6 +6,7 @@
 #include <string>
 #include <memory>
 #include <vector>
+#include <functional>
 
 class Scene; //forward declaration - makes it so there isnt looping of includes
 class Renderer; //can also put class/struct in front of usage if only one
@@ -20,6 +21,8 @@ public:
 	void Initialize() override;
 	virtual void Update(float dt);
 	virtual void Draw(Renderer& renderer);
+
+	std::function<void(Actor*)> OnCollisionEnter;
 
 	void AddComponent(std::unique_ptr<Component> component);
 

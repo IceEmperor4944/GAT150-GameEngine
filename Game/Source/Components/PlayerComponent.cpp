@@ -1,8 +1,10 @@
 #include "PlayerComponent.h"
 #include "Engine.h"
 
-void PlayerComponent::Initialize() {
+FACTORY_REGISTER(PlayerComponent)
 
+void PlayerComponent::Initialize() {
+	owner->OnCollisionEnter = std::bind(&PlayerComponent::OnCollisionEnter, this, std::placeholders::_1);
 }
 
 void PlayerComponent::Update(float dt) {
@@ -12,6 +14,10 @@ void PlayerComponent::Update(float dt) {
 	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_W)) direction.y = -1;
 	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_S)) direction.y = 1;
 	owner->GetComponent<PhysicsComponent>()->ApplyForce(direction * speed); ///can read in a speed variable later, then use that instead of set value
+}
+
+void PlayerComponent::OnCollisionEnter(Actor* actor) {
+	std::cout << "player hit\n";
 }
 
 void PlayerComponent::Read(const json_t& value) {

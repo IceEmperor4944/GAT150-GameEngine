@@ -1,6 +1,9 @@
-﻿  TextureComponent.cpp
+﻿  CircleCollisionComponent.cpp
+  EnginePhysicsComponent.cpp
+  TextComponent.cpp
+  TextureComponent.cpp
   Engine.cpp
+  Actor.cpp
   Scene.cpp
   Generating Code...
-sdl2_image.lib(SDL2_image.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in sdl2.lib(SDL2.dll); second definition ignored
   Engine.vcxproj -> C:\Users\nsears\source\repos\GAT150-GameEngine\Bin\Engine\Debug\Engine.lib

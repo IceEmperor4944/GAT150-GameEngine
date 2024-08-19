@@ -5,12 +5,13 @@
 #include <cstdlib>
 #include <vector>
 
+void func1(int i) { std::cout << "func1: " << i << std::endl; }
+void func2(int i) { std::cout << "func2: " << i << std::endl; }
+
 int main(int argc, char* argv[]) {
-	Factory::Instance().Register<Actor>(Actor::GetTypeName());
-	Factory::Instance().Register<TextureComponent>(TextureComponent::GetTypeName());
-	Factory::Instance().Register<EnginePhysicsComponent>(EnginePhysicsComponent::GetTypeName());
-	Factory::Instance().Register<PlayerComponent>(PlayerComponent::GetTypeName());
-	Factory::Instance().Register<TextComponent>(TextComponent::GetTypeName());
+	void(*fp)(int);
+	fp = &func1;
+	fp(5);
 
 	std::unique_ptr<Engine> engine = std::make_unique<Engine>();
 	engine->Initialize();
@@ -18,11 +19,11 @@ int main(int argc, char* argv[]) {
 	File::SetFilePath("Assets");
 	std::cout << File::GetFilePath() << std::endl;
 
-	// !! this code is not neccessary, it just shows the contents of the file !!
-	std::string buffer;
-	File::ReadFile("Scenes/scene.json", buffer);
-	// show the contents of the json file
-	std::cout << buffer << std::endl;
+	//// !! this code is not neccessary, it just shows the contents of the file !!
+	//std::string buffer;
+	//File::ReadFile("Scenes/scene.json", buffer);
+	//// show the contents of the json file
+	//std::cout << buffer << std::endl;
 
 	// create json document from the json file contents
 	rapidjson::Document document;

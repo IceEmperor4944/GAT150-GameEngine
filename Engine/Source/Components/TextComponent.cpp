@@ -5,6 +5,7 @@
 #include "Renderer/Renderer.h"
 #include "Framework/Actor.h"
 
+FACTORY_REGISTER(TextComponent)
 
 void TextComponent::Initialize() {
 	if (!fontName.empty()) {
