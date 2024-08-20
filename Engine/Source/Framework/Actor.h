@@ -15,8 +15,10 @@ class Actor : public Object {
 public:
 	Actor() = default;
 	Actor(const Transform& transform) : transform{ transform } {}
+	Actor(const Actor& other);
 
 	CLASS_DECLARATION(Actor)
+	CLASS_PROTOTYPE(Actor)
 
 	void Initialize() override;
 	virtual void Update(float dt);

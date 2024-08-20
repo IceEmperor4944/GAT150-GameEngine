@@ -14,6 +14,13 @@ void PlayerComponent::Update(float dt) {
 	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_W)) direction.y = -1;
 	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_S)) direction.y = 1;
 	owner->GetComponent<PhysicsComponent>()->ApplyForce(direction * speed); ///can read in a speed variable later, then use that instead of set value
+
+	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_SPACE)) {
+		auto rocket = Factory::Instance().Create<Actor>("rocket");
+		rocket->transform.position = owner->transform.position;
+		rocket->transform.rotation = owner->transform.rotation;
+		owner->scene->AddActor(std::move(rocket), true);
+	}
 }
 
 void PlayerComponent::OnCollisionEnter(Actor* actor) {

@@ -7,8 +7,17 @@
 
 FACTORY_REGISTER(TextComponent)
 
+TextComponent::TextComponent(const TextComponent& other) {
+	text = other.text;
+	fontName = other.fontName;
+	fontSize = other.fontSize;
+	color = other.color;
+	textChanged = true;
+	m_text = std::make_unique<Text>(*other.m_text.get());
+}
+
 void TextComponent::Initialize() {
-	if (!fontName.empty()) {
+	if (!m_text && !fontName.empty()) {
 		auto font = ResourceManager::Instance().Get<Font>(fontName, fontSize);
 		m_text = std::make_unique<Text>(font);
 	}

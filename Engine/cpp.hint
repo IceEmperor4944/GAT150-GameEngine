@@ -4,3 +4,4 @@
 #define CLASS_DECLARATION(class) static const char* GetTypeName() { return #class; } virtual void Read(const json_t& value); virtual void Write(json_t& value);
 #define FACTORY_REGISTER(classname) class Register##classname { public: Register##classname() { Factory::Instance().Register<classname>(#classname); } };
 #define READ_DATA(value, data) Json::Read(value, #data, data)
+#define CLASS_PROTOTYPE(classname) virtual std::unique_ptr<Object> Clone() { retun std::make_unique<classname>(*this); }

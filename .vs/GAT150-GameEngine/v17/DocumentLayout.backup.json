@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Source\\Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C72326D3-8E49-4526-83DC-12FDB6DF1D11}|Game\\Game.vcxproj|C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Game\\Source\\Components\\PlayerComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C72326D3-8E49-4526-83DC-12FDB6DF1D11}|Game\\Game.vcxproj|solutionrelative:Game\\Source\\Components\\PlayerComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Source\\Engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Framework\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Source\\Framework\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Physics\\Physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Source\\Physics\\Physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Framework\\Actor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Source\\Framework\\Actor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Physics\\Physics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Source\\Physics\\Physics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Framework\\Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Source\\Framework\\Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Engine.cpp",
-              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Engine.cpp",
-              "RelativeDocumentMoniker": "Engine\\Source\\Engine.cpp",
-              "ToolTip": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Engine.cpp",
-              "RelativeToolTip": "Engine\\Source\\Engine.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-20T00:19:16.449Z",
+              "Title": "PlayerComponent.h",
+              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Game\\Source\\Components\\PlayerComponent.h",
+              "RelativeDocumentMoniker": "Game\\Source\\Components\\PlayerComponent.h",
+              "ToolTip": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Game\\Source\\Components\\PlayerComponent.h",
+              "RelativeToolTip": "Game\\Source\\Components\\PlayerComponent.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-20T17:10:27.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Engine.h",
-              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Engine.h",
-              "RelativeDocumentMoniker": "Engine\\Source\\Engine.h",
-              "ToolTip": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Engine.h",
-              "RelativeToolTip": "Engine\\Source\\Engine.h",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEUAAAABAAAAAAAAAA==",
+              "Title": "Scene.h",
+              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Framework\\Scene.h",
+              "RelativeDocumentMoniker": "Engine\\Source\\Framework\\Scene.h",
+              "ToolTip": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Framework\\Scene.h",
+              "RelativeToolTip": "Engine\\Source\\Framework\\Scene.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-20T00:17:37.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Physics.cpp",
-              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Physics\\Physics.cpp",
-              "RelativeDocumentMoniker": "Engine\\Source\\Physics\\Physics.cpp",
-              "ToolTip": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Physics\\Physics.cpp",
-              "RelativeToolTip": "Engine\\Source\\Physics\\Physics.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-20T00:17:03.78Z",
+              "WhenOpened": "2024-08-20T17:10:16.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Physics.h",
-              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Physics\\Physics.h",
-              "RelativeDocumentMoniker": "Engine\\Source\\Physics\\Physics.h",
-              "ToolTip": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Physics\\Physics.h",
-              "RelativeToolTip": "Engine\\Source\\Physics\\Physics.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Title": "Actor.h",
+              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Framework\\Actor.h",
+              "RelativeDocumentMoniker": "Engine\\Source\\Framework\\Actor.h",
+              "ToolTip": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Framework\\Actor.h",
+              "RelativeToolTip": "Engine\\Source\\Framework\\Actor.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-20T00:16:19.475Z",
+              "WhenOpened": "2024-08-20T17:09:43.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Actor.cpp",
+              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Framework\\Actor.cpp",
+              "RelativeDocumentMoniker": "Engine\\Source\\Framework\\Actor.cpp",
+              "ToolTip": "C:\\Users\\nsears\\source\\repos\\GAT150-GameEngine\\Engine\\Source\\Framework\\Actor.cpp",
+              "RelativeToolTip": "Engine\\Source\\Framework\\Actor.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-20T17:09:41.734Z",
               "EditorCaption": ""
             }
           ]
