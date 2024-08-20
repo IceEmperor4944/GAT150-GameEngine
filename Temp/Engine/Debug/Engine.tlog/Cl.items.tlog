@@ -15,6 +15,7 @@ C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Framework\Object.cp
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Framework\Scene.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Scene.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Input\Input.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Input.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Math\Transform.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Transform.obj
+C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Physics\Physics.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Physics.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Renderer\Font.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Font.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Renderer\Model.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Model.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Renderer\Particle.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Particle.obj

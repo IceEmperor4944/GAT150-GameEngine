@@ -1,9 +1,29 @@
-﻿  CircleCollisionComponent.cpp
+﻿  Audio.cpp
+  CircleCollisionComponent.cpp
   EnginePhysicsComponent.cpp
+  PhysicsComponent.cpp
   TextComponent.cpp
   TextureComponent.cpp
+  EAssert.cpp
+  EFile.cpp
+  EString.cpp
+  ETime.cpp
+  Json.cpp
   Engine.cpp
   Actor.cpp
+  Object.cpp
   Scene.cpp
+  Input.cpp
+  Transform.cpp
+  Physics.cpp
+  Font.cpp
+  Model.cpp
+  Generating Code...
+  Compiling...
+  Particle.cpp
+  ParticleSystem.cpp
+  Renderer.cpp
+  Text.cpp
+  Texture.cpp
   Generating Code...
   Engine.vcxproj -> C:\Users\nsears\source\repos\GAT150-GameEngine\Bin\Engine\Debug\Engine.lib

@@ -1,6 +1,6 @@
 #include "Texture.h"
 #include "Renderer.h"
-#include "../Core/EFile.h"
+#include "Core/EFile.h"
 
 #include <iostream>
 #include <string>
