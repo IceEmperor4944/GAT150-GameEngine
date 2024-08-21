@@ -23,6 +23,9 @@
     <ClCompile Include="Source\Components\RocketComponent.cpp">
       <Filter>Source\Components</Filter>
     </ClCompile>
+    <ClCompile Include="Source\SpaceGame.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Build\Assets\Scenes\scene.json">
@@ -36,6 +39,9 @@
     </ClInclude>
     <ClInclude Include="Source\Components\RocketComponent.h">
       <Filter>Source\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SpaceGame.h">
+      <Filter>Source</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

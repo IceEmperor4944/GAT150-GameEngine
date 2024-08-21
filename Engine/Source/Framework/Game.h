@@ -15,15 +15,14 @@ public:
 	virtual void Update(float dt) = 0;
 	virtual void Draw(Renderer& renderer) = 0;
 
-	int GetLevel() const { return m_level; }
-	void AddLevel() {  m_level++; }
+	int GetScore() const { return m_score; }
+	void AddPoints(int score) {  m_score += score; }
 
-	int GetBombs() const { return m_bombs; }
-	void AddBomb() { m_bombs++; }
+	int GetLives() const { return m_lives; }
+	void SetLives(int lives) { m_lives = lives; }
 protected:
-	int m_level = 0;
-	int m_bombs = 0;
+	int m_score = 0;
+	int m_lives = 0;
 
 	Engine* m_engine{ nullptr };
-	Scene* m_scene{ nullptr };
 };

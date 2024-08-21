@@ -40,6 +40,9 @@
 #include "Resources/Resource.h"
 #include "Resources/ResourceManager.h"
 
+//EVENT SYSTEM
+#include "Event/EventSystem.h"
+
 //COMPONENTS
 #include "Components/TextureComponent.h"
 #include "Components/EnginePhysicsComponent.h"
