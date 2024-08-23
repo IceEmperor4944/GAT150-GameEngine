@@ -25,6 +25,7 @@ public:
 	virtual void Draw(Renderer& renderer);
 
 	std::function<void(Actor*)> OnCollisionEnter;
+	std::function<void(Actor*)> OnCollisionExit;
 
 	void AddComponent(std::unique_ptr<Component> component);
 

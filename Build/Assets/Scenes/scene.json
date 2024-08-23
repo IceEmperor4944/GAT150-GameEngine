@@ -27,17 +27,15 @@
           "textureName": "images/player.png"
         },
         {
-          "type": "EnginePhysicsComponent",
-          "velocity": [ 0, 0 ],
-          "damping": 1.5
+          "type": "Box2DPhysicsComponent",
+          "damping": 0.85,
+          "angularDamping": 0.85,
+          "gravityScale": 0,
+          "size": [ 32, 32 ]
         },
         {
           "type": "PlayerComponent",
           "speed": 500
-        },
-        {
-          "type": "CircleCollisionComponent",
-          "radius": 24
         }
       ]
     },
@@ -54,8 +52,11 @@
           "textureName": "images/enemy.png"
         },
         {
-          "type": "CircleCollisionComponent",
-          "radius": 24
+          "type": "Box2DPhysicsComponent",
+          "damping": 0.85,
+          "angularDamping": 0.85,
+          "gravityScale": 0,
+          "size": [ 32, 32 ]
         }
       ]
     },
@@ -90,17 +91,16 @@
           "textureName": "images/rocket.png"
         },
         {
-          "type": "EnginePhysicsComponent",
-          "velocity": [ 0, 0 ],
-          "damping": 0.0
+          "type": "Box2DPhysicsComponent",
+          "damping": 0.0,
+          "angularDamping": 0.0,
+          "gravityScale": 0,
+          "isSensor": true,
+          "size": [ 32, 16 ]
         },
         {
           "type": "RocketComponent",
           "speed": 400
-        },
-        {
-          "type": "CircleCollisionComponent",
-          "radius": 12
         }
       ]
     }

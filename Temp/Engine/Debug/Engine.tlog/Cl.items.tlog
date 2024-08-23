@@ -1,4 +1,5 @@
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Audio\Audio.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Audio.obj
+C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\Box2DPhysicsComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Box2DPhysicsComponent.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\CircleCollisionComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\CircleCollisionComponent.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\EnginePhysicsComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\EnginePhysicsComponent.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\PhysicsComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\PhysicsComponent.obj
@@ -11,12 +12,14 @@ C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Core\ETime.cpp;C:\U
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Core\Json.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Json.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Engine.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Engine.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Event\EventSystem.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\EventSystem.obj
+C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Event\Observer.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Observer.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Framework\Actor.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Actor.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Framework\Object.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Object.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Framework\Scene.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Scene.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Input\Input.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Input.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Math\Transform.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Transform.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Physics\Physics.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Physics.obj
+C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Physics\RigidBody.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\RigidBody.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Renderer\Font.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Font.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Renderer\Model.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Model.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Renderer\Particle.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Particle.obj

@@ -123,6 +123,15 @@
     <ClCompile Include="Source\Event\EventSystem.cpp">
       <Filter>Source\Event</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Event\Observer.cpp">
+      <Filter>Source\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\RigidBody.cpp">
+      <Filter>Source\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Box2DPhysicsComponent.cpp">
+      <Filter>Source\Components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Core\EAssert.h">
@@ -247,6 +256,12 @@
     </ClInclude>
     <ClInclude Include="Source\Event\EventSystem.h">
       <Filter>Source\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\RigidBody.h">
+      <Filter>Source\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Box2DPhysicsComponent.h">
+      <Filter>Source\Components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

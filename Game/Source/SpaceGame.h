@@ -7,6 +7,7 @@ class SpaceGame : public Game, Observer {
 public:
 	SpaceGame() = default;
 	SpaceGame(Engine* engine) : Game{ engine } {}
+
 	
 	bool Initialize() override;
 	void Shutdown() override;

@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Audio\Audio.h" />
+    <ClInclude Include="Source\Components\Box2DPhysicsComponent.h" />
     <ClInclude Include="Source\Components\CircleCollisionComponent.h" />
     <ClInclude Include="Source\Components\CollisionComponent.h" />
     <ClInclude Include="Source\Components\Component.h" />
@@ -50,6 +51,7 @@
     <ClInclude Include="Source\Math\Transform.h" />
     <ClInclude Include="Source\Math\Vector2.h" />
     <ClInclude Include="Source\Physics\Physics.h" />
+    <ClInclude Include="Source\Physics\RigidBody.h" />
     <ClInclude Include="Source\Renderer\Color.h" />
     <ClInclude Include="Source\Renderer\Font.h" />
     <ClInclude Include="Source\Renderer\Model.h" />
@@ -63,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Audio\Audio.cpp" />
+    <ClCompile Include="Source\Components\Box2DPhysicsComponent.cpp" />
     <ClCompile Include="Source\Components\CircleCollisionComponent.cpp" />
     <ClCompile Include="Source\Components\EnginePhysicsComponent.cpp" />
     <ClCompile Include="Source\Components\PhysicsComponent.cpp" />
@@ -75,12 +78,14 @@
     <ClCompile Include="Source\Core\Json.cpp" />
     <ClCompile Include="Source\Engine.cpp" />
     <ClCompile Include="Source\Event\EventSystem.cpp" />
+    <ClCompile Include="Source\Event\Observer.cpp" />
     <ClCompile Include="Source\Framework\Actor.cpp" />
     <ClCompile Include="Source\Framework\Object.cpp" />
     <ClCompile Include="Source\Framework\Scene.cpp" />
     <ClCompile Include="Source\Input\Input.cpp" />
     <ClCompile Include="Source\Math\Transform.cpp" />
     <ClCompile Include="Source\Physics\Physics.cpp" />
+    <ClCompile Include="Source\Physics\RigidBody.cpp" />
     <ClCompile Include="Source\Renderer\Font.cpp" />
     <ClCompile Include="Source\Renderer\Model.cpp" />
     <ClCompile Include="Source\Renderer\Particle.cpp" />

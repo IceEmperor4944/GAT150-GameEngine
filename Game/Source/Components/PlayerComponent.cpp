@@ -8,12 +8,15 @@ void PlayerComponent::Initialize() {
 }
 
 void PlayerComponent::Update(float dt) {
-	Vector2 direction{ 0, 0 };
-	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_A)) direction.x = -1;
-	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_D)) direction.x = 1;
-	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_W)) direction.y = -1;
-	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_S)) direction.y = 1;
-	owner->GetComponent<PhysicsComponent>()->ApplyForce(direction * speed); ///can read in a speed variable later, then use that instead of set value
+	float rotate = 0;
+	float thrust = 0;
+	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_A)) rotate = -1;	//direction.x = -1;
+	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_D)) rotate = 1;	//direction.x = 1;
+	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_W)) thrust = 1;	//direction.y = -1;
+	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_S)) thrust = -1;	//direction.y = 1;
+	owner->GetComponent<PhysicsComponent>()->ApplyTorque(rotate * 90 * dt);
+	Vector2 direction = Vector2{ 1, 0 }.Rotate(Math::DegToRad(owner->transform.rotation));
+	owner->GetComponent<PhysicsComponent>()->ApplyForce(direction * speed * thrust); ///can read in a speed variable later, then use that instead of set value
 
 	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_SPACE)) {
 		auto rocket = Factory::Instance().Create<Actor>("rocket");

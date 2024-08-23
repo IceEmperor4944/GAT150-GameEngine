@@ -29,6 +29,7 @@ int main(int argc, char* argv[]) {
 		engine->GetRenderer().EndFrame();
 	}
 
+	game->Shutdown();
 	ResourceManager::Instance().Clear();
 	engine->Shutdown();
 
