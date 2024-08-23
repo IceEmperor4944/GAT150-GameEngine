@@ -101,6 +101,11 @@
         {
           "type": "RocketComponent",
           "speed": 400
+        },
+        {
+          "type": "AudioComponent",
+          "soundName": "sounds/cowbell.wav",
+          "playOnStart": true
         }
       ]
     }

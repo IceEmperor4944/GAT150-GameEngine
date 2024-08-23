@@ -1,2 +1,5 @@
-﻿  Observer.cpp
+﻿  AudioSource.cpp
+  AudioComponent.cpp
+  Engine.cpp
+  Generating Code...
   Engine.vcxproj -> C:\Users\nsears\source\repos\GAT150-GameEngine\Bin\Engine\Debug\Engine.lib

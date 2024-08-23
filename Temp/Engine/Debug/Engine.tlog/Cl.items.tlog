@@ -1,4 +1,7 @@
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Audio\Audio.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Audio.obj
+C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Audio\AudioClip.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\AudioClip.obj
+C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Audio\AudioSource.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\AudioSource.obj
+C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\AudioComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\AudioComponent.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\Box2DPhysicsComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\Box2DPhysicsComponent.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\CircleCollisionComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\CircleCollisionComponent.obj
 C:\Users\nsears\source\repos\GAT150-GameEngine\Engine\Source\Components\EnginePhysicsComponent.cpp;C:\Users\nsears\source\repos\GAT150-GameEngine\Temp\Engine\Debug\EnginePhysicsComponent.obj
