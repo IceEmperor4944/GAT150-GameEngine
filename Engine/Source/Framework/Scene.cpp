@@ -20,40 +20,6 @@ void Scene::Update(float dt) {
 	for (auto& actor : actors) {
 		if (actor->isActive) actor->Update(dt);
 	}
-
-	//collision
-	//for (auto& actor1 : actors) {
-	//	CollisionComponent* collision1 = actor1->GetComponent<CollisionComponent>();
-	//	if (!collision1) continue;
-
-	//	for (auto& actor2 : actors) {
-	//		//dont check with self
-	//		if (actor1 == actor2/* || (actor1->destroyed || actor2->destroyed)*/) continue;
-
-	//		CollisionComponent* collision2 = actor2->GetComponent<CollisionComponent>();
-	//		if (!collision2) continue;
-
-	//		if (collision1->CheckCollision(collision2)) {
-	//			if(actor1->OnCollisionEnter) actor1->OnCollisionEnter(actor2.get());
-	//			if(actor2->OnCollisionEnter) actor2->OnCollisionEnter(actor1.get());
-	//		}
-
-	//		/*Vector2 direction = actor1->transform.position - actor2->transform.position;
-	//		float distance = direction.Length();
-
-	//		float radius = actor1->+ actor2->GetRadius();
-
-	//		if (distance <= radius) {
-	//			actor1->OnCollision(actor2.get());
-	//			actor2->OnCollision(actor1.get());
-	//		}*/
-	//	}
-	//}
-
-	//destroy
-	/*actors.erase(std::remove_if(actors.begin(), actors.end(),
-		[](auto& actor) {return actor->destroyed; }), actors.end());*/
-	//std::erase_if(m_actors, [](Actor* actor) {return actor->m_destroyed; });
 }
 
 void Scene::Draw(Renderer& renderer) {
@@ -69,8 +35,8 @@ void Scene::AddActor(std::unique_ptr<Actor> actor, bool initialize) {
 	actors.push_back(std::move(actor));
 }
 
-void Scene::RemoveAll() {
-	actors.clear();
+void Scene::RemoveAll(bool force) {
+	std::erase_if(actors, [force](auto& actor) {return (force || !actor->persistent); });
 }
 
 void Scene::Read(const json_t& value) {

@@ -30,6 +30,7 @@
 #include "Math/MathUtils.h"
 #include "Math/Vector2.h"
 #include "Math/Transform.h"
+#include "Math/Rect.h"
 
 //FRAMEWORK
 #include "Framework/Actor.h"
@@ -45,7 +46,9 @@
 
 //COMPONENTS
 #include "Components/TextureComponent.h"
+#include "Components/TextureAnimationComponent.h"
 #include "Components/EnginePhysicsComponent.h"
+#include "Components/Box2DPhysicsComponent.h"
 #include "Components/TextComponent.h"
 
 //PHYSICS

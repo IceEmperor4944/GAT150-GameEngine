@@ -12,5 +12,7 @@ public:
 	void Draw(Renderer& renderer) override;
 public:
 	std::string textureName;
+	struct Rect source;
+	bool hflip = false;
 	res_t<Texture> texture;
 };

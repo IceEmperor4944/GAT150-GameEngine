@@ -31,7 +31,9 @@
     <ClInclude Include="Source\Components\PhysicsComponent.h" />
     <ClInclude Include="Source\Components\RenderComponent.h" />
     <ClInclude Include="Source\Components\TextComponent.h" />
+    <ClInclude Include="Source\Components\TextureAnimationComponent.h" />
     <ClInclude Include="Source\Components\TextureComponent.h" />
+    <ClInclude Include="Source\Components\TilemapComponent.h" />
     <ClInclude Include="Source\Core\EAssert.h" />
     <ClInclude Include="Source\Core\EFile.h" />
     <ClInclude Include="Source\Core\EString.h" />
@@ -51,6 +53,7 @@
     <ClInclude Include="Source\Input\Input.h" />
     <ClInclude Include="Source\Math\MathUtils.h" />
     <ClInclude Include="Source\Math\Random.h" />
+    <ClInclude Include="Source\Math\Rect.h" />
     <ClInclude Include="Source\Math\Transform.h" />
     <ClInclude Include="Source\Math\Vector2.h" />
     <ClInclude Include="Source\Physics\Physics.h" />
@@ -76,7 +79,9 @@
     <ClCompile Include="Source\Components\EnginePhysicsComponent.cpp" />
     <ClCompile Include="Source\Components\PhysicsComponent.cpp" />
     <ClCompile Include="Source\Components\TextComponent.cpp" />
+    <ClCompile Include="Source\Components\TextureAnimationComponent.cpp" />
     <ClCompile Include="Source\Components\TextureComponent.cpp" />
+    <ClCompile Include="Source\Components\TilemapComponent.cpp" />
     <ClCompile Include="Source\Core\EAssert.cpp" />
     <ClCompile Include="Source\Core\EFile.cpp" />
     <ClCompile Include="Source\Core\EString.cpp" />

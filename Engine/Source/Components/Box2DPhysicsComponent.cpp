@@ -13,41 +13,38 @@ Box2DPhysicsComponent::Box2DPhysicsComponent(const Box2DPhysicsComponent& other)
 	//}
 }
 
-void Box2DPhysicsComponent::Initialize()
-{
+void Box2DPhysicsComponent::Initialize() {
 	rigidBodyDef.actor = owner;
-	m_rigidBody = std::make_unique<RigidBody>(owner->transform, size, rigidBodyDef, owner->scene->engine->GetPhysics());
+	if (size.x == 0 && size.y == 0) {
+		auto textureComponent = owner->GetComponent<TextureComponent>();
+		size = Vector2{ textureComponent->source.w, textureComponent->source.h };
+	}
+	m_rigidBody = std::make_unique<RigidBody>(owner->transform, size * scale, rigidBodyDef, owner->scene->engine->GetPhysics());
 }
 
-void Box2DPhysicsComponent::Update(float dt)
-{
+void Box2DPhysicsComponent::Update(float dt) {
 	owner->transform.position = m_rigidBody->GetPosition();
 	owner->transform.rotation = m_rigidBody->GetAngle();
 	velocity = m_rigidBody->GetVelocity();
 }
 
-void Box2DPhysicsComponent::ApplyForce(const Vector2& force)
-{
+void Box2DPhysicsComponent::ApplyForce(const Vector2& force) {
 	m_rigidBody->ApplyForce(force);
 }
 
-void Box2DPhysicsComponent::ApplyTorque(float torque)
-{
+void Box2DPhysicsComponent::ApplyTorque(float torque) {
 	m_rigidBody->ApplyTorque(torque);
 }
 
-void Box2DPhysicsComponent::SetPosition(const Vector2& position)
-{
+void Box2DPhysicsComponent::SetPosition(const Vector2& position) {
 	m_rigidBody->SetTransform(position, m_rigidBody->GetAngle());
 }
 
-void Box2DPhysicsComponent::SetVelocity(const Vector2& velocity)
-{
+void Box2DPhysicsComponent::SetVelocity(const Vector2& velocity) {
 	m_rigidBody->SetVelocity(velocity);
 }
 
-void Box2DPhysicsComponent::Read(const json_t& value)
-{
+void Box2DPhysicsComponent::Read(const json_t& value) {
 	READ_DATA_NAME(value, "gravityScale", rigidBodyDef.gravityScale);
 	READ_DATA_NAME(value, "damping", rigidBodyDef.damping);
 	READ_DATA_NAME(value, "angularDamping", rigidBodyDef.angularDamping);
@@ -60,10 +57,16 @@ void Box2DPhysicsComponent::Read(const json_t& value)
 
 	//READ_DATA_STRUCT(value, gravityScale, rigidBodyDef); //does the same as above with different macro
 
+	std::string shape;
+	READ_DATA(value, shape);
+
+	if (IsEqualIgnoreCase(shape, "capsule")) rigidBodyDef.shape = RigidBody::Shape::CAPSULE;
+	else if(IsEqualIgnoreCase(shape, "circle")) rigidBodyDef.shape = RigidBody::Shape::CIRCLE;
+
 	READ_DATA(value, size);
+	READ_DATA(value, scale);
 }
 
-void Box2DPhysicsComponent::Write(json_t& value)
-{
+void Box2DPhysicsComponent::Write(json_t& value) {
 	//
 }

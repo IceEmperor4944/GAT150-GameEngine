@@ -141,6 +141,12 @@
     <ClCompile Include="Source\Components\AudioComponent.cpp">
       <Filter>Source\Components</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Components\TilemapComponent.cpp">
+      <Filter>Source\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\TextureAnimationComponent.cpp">
+      <Filter>Source\Components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Core\EAssert.h">
@@ -279,6 +285,15 @@
       <Filter>Source\Audio</Filter>
     </ClInclude>
     <ClInclude Include="Source\Components\AudioComponent.h">
+      <Filter>Source\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Math\Rect.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\TilemapComponent.h">
+      <Filter>Source\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\TextureAnimationComponent.h">
       <Filter>Source\Components</Filter>
     </ClInclude>
   </ItemGroup>
