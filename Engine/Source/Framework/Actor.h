@@ -36,7 +36,7 @@ public:
 
 	friend class Scene;
 public:
-	std::string tag;
+	std::vector<std::string> tag;
 	float lifespan = 0;
 	bool destroyed = false;
 	

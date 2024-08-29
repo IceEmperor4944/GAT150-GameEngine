@@ -12,37 +12,109 @@ void CharacterComponent::Initialize() {
 }
 
 void CharacterComponent::Update(float dt) {
-	Vector2 direction{ 0, 0 };	
-	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_A)) direction.x = -1;
-	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_D)) direction.x = 1;	
+	//MOVEMENT
+	//walk
+	Vector2 direction{ 0, 0 };
+	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_LEFT)) direction.x = -1.0f;
+	if (owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_RIGHT)) direction.x = 1.0f;	
 	
+	//jump
 	float modifier = (groundCount) ? 1 : 0.5f;
 	physics->ApplyForce(direction * speed * modifier);
 
-	if (groundCount && owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_SPACE)) {
+	if (groundCount && !wallCount && owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_Z) && !owner->scene->engine->GetInput().GetPrevKeyDown(SDL_SCANCODE_Z)) {
 		physics->SetVelocity(Vector2{ 0.0f, -jumpHeight });
 	}
 
+	//wall jump
+	if (wallCount && jumpTimer <= 0.0f && !groundCount && owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_Z) && !owner->scene->engine->GetInput().GetPrevKeyDown(SDL_SCANCODE_Z)) {
+		physics->SetVelocity(Vector2{ direction.x * speed * modifier * -0.1f, -jumpHeight });
+		jumpTimer = 20.0f;
+	}
+
+	/*//dash
+	dashDuration = (dashDuration - 1 < 0) ? dashDuration - 1 : 0;
+	dashCountdown = (dashCountdown - 1 < 0) ? dashCountdown - 1 : 0;
+
+	if (dashDuration > 0) direction.y = 0;
+	else if (wallCount) direction.y = (direction.y + dt < 2) ? direction.y + dt : 2.0f;
+	else direction.y += dt;
+
+	switch (dashDuration) {
+	case 5:
+		direction.y = -dashMod * speed * 0.5f;
+		break;
+	case 3:
+		direction.y = -dashMod * speed * 0.5f;
+		break;
+	case 2:
+		direction.y = -dashMod * speed;
+		break;
+	case 1:
+		direction.y = -dashMod * speed * 2.0f;;
+		break;
+	}
+
+	if ((wallCount || groundCount) && (!hasDashed && owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_X))) {
+		dashDuration = 100;
+		physics->ApplyForce(direction * speed * dashMod);
+		hasDashed = true;
+		dashCountdown = 50;
+		isDash = true;
+	}
+
+	if (dashCountdown <= 0 && (groundCount || wallCount)) {
+		hasDashed = false;
+	}
+
+	if (wallCount) {
+		hasDashed = false;
+	}*/
+
+	//ANIMATION
 	if (physics->velocity.x < -0.1f) animation->hflip = true;
 	else if (physics->velocity.x > 0.1f) animation->hflip = false;
 
-	if (Math::Abs(physics->velocity.x) > 0.1f) animation->SetAnimation("walk");
+	if (hit) {
+		animation->SetAnimation("death");
+		deathTimer--;
+	}
+	else if (Math::Abs(physics->velocity.x) > 0.1f) animation->SetAnimation("walk");
+	else if (!groundCount && !wallCount) animation->SetAnimation("jump");
+	else if (wallCount && !groundCount) animation->SetAnimation("slide");
+	//else if (isDash) animation->SetAnimation("dash");
 	else animation->SetAnimation("idle");
+
+	if(deathTimer <= 0)	owner->destroyed = true;
+
+	jumpTimer--;
 }
 
 void CharacterComponent::OnCollisionEnter(Actor* actor) {
 	//std::cout << "player hit\n";
 	//EVENT_NOTIFY(PlayerDead);
-	if (actor->tag == "Ground") groundCount++;
+	for (auto tag : actor->tag) {
+		if (tag == "Ground") {
+			groundCount++;
+			jumpTimer = 0.0f;
+		}
+		if (tag == "Wall") wallCount++;
+		//isDash = false;
+		if (tag == "Fire" || tag == "Enemy") hit = true;
+	}
 }
 
 void CharacterComponent::OnCollisionExit(Actor* actor) {
-	if (actor->tag == "Ground") groundCount--;
+	for (auto tag : actor->tag) {
+		if (tag == "Ground") groundCount--;
+		if (tag == "Wall") wallCount--;
+	}
 }
 
 void CharacterComponent::Read(const json_t& value) {
 	READ_DATA(value, speed);
 	READ_DATA(value, jumpHeight);
+	//READ_DATA(value, dashMod);
 }
 
 void CharacterComponent::Write(json_t& value) {

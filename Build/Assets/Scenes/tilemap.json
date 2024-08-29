@@ -2,22 +2,53 @@
   "actors": [
     {
       "type": "Actor",
-      "name": "tile01",
-      "tag": "Ground",
+      "name": "rockmid",
+      "tag": [
+        "Ground"
+      ],
+        "prototype": true,
+        "persistent": true,
+        "transform": {
+          "scale": 4
+        },
+        "components": [
+          {
+            "type": "TextureComponent",
+            "textureName": "images/8bittiles.png",
+            "source": [
+              48,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "type": "Box2DPhysicsComponent",
+            "isDynamic": false,
+            "restitution": 0.0
+          }
+        ]
+      },
+    {
+      "type": "Actor",
+      "name": "gold",
+      "tag": [
+        "Ground"
+      ],
       "prototype": true,
       "persistent": true,
       "transform": {
-        "scale": 2
+        "scale": 4
       },
       "components": [
         {
           "type": "TextureComponent",
-          "textureName": "images/tileset_32x32.png",
+          "textureName": "images/8bittiles.png",
           "source": [
-            96,
-            416,
-            32,
-            32
+            48,
+            48,
+            16,
+            16
           ]
         },
         {
@@ -29,22 +60,24 @@
     },
     {
       "type": "Actor",
-      "name": "tile02",
-      "tag": "Ground",
+      "name": "rocklcorner",
+      "tag": [
+        "Ground"
+      ],
       "prototype": true,
       "persistent": true,
       "transform": {
-        "scale": 2
+        "scale": 4
       },
       "components": [
         {
           "type": "TextureComponent",
-          "textureName": "images/tileset_32x32.png",
+          "textureName": "images/8bittiles.png",
           "source": [
+            32,
             0,
-            128,
-            32,
-            32
+            16,
+            16
           ]
         },
         {
@@ -56,7 +89,223 @@
     },
     {
       "type": "Actor",
-      "name": "World",
+      "name": "rockrcorner",
+      "tag": [
+        "Ground"
+      ],
+      "prototype": true,
+      "persistent": true,
+      "transform": {
+        "scale": 4
+      },
+      "components": [
+        {
+          "type": "TextureComponent",
+          "textureName": "images/8bittiles.png",
+          "source": [
+            80,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "type": "Box2DPhysicsComponent",
+          "isDynamic": false,
+          "restitution": 0.0
+        }
+      ]
+    },
+    {
+      "type": "Actor",
+      "name": "dirt",
+      "tag": [
+        "Ground"
+      ],
+      "prototype": true,
+      "persistent": true,
+      "transform": {
+        "scale": 4
+      },
+      "components": [
+        {
+          "type": "TextureComponent",
+          "textureName": "images/8bittiles.png",
+          "source": [
+            64,
+            32,
+            16,
+            16
+          ]
+        },
+        {
+          "type": "Box2DPhysicsComponent",
+          "isDynamic": false,
+          "restitution": 0.0
+        }
+      ]
+    },
+    {
+      "type": "Actor",
+      "name": "rocklwall",
+      "tag": [
+        "Wall"
+      ],
+      "prototype": true,
+      "persistent": true,
+      "transform": {
+        "rotation": 90,
+        "scale": 4
+      },
+      "components": [
+        {
+          "type": "TextureComponent",
+          "textureName": "images/8bittiles.png",
+          "source": [
+            48,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "type": "Box2DPhysicsComponent",
+          "isDynamic": false,
+          "restitution": 0.0
+        }
+      ]
+    },
+    {
+      "type": "Actor",
+      "name": "rockrwall",
+      "tag": [
+        "Wall"
+      ],
+      "prototype": true,
+      "persistent": true,
+      "transform": {
+        "rotation": 270,
+        "scale": 4
+      },
+      "components": [
+        {
+          "type": "TextureComponent",
+          "textureName": "images/8bittiles.png",
+          "source": [
+            48,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "type": "Box2DPhysicsComponent",
+          "isDynamic": false,
+          "restitution": 0.0
+        }
+      ]
+    },
+    {
+      "type": "Actor",
+      "name": "rocklcornerwall",
+      "tag": [
+        "Ground",
+        "Wall"
+      ],
+      "prototype": true,
+      "persistent": true,
+      "transform": {
+        "rotation": 90,
+        "scale": 4
+      },
+      "components": [
+        {
+          "type": "TextureComponent",
+          "textureName": "images/8bittiles.png",
+          "source": [
+            32,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "type": "Box2DPhysicsComponent",
+          "isDynamic": false,
+          "restitution": 0.0
+        }
+      ]
+    },
+    {
+      "type": "Actor",
+      "name": "rockrcornerwall",
+      "tag": [
+        "Ground",
+        "Wall"
+      ],
+      "prototype": true,
+      "persistent": true,
+      "transform": {
+        "rotation": 270,
+        "scale": 4
+      },
+      "components": [
+        {
+          "type": "TextureComponent",
+          "textureName": "images/8bittiles.png",
+          "source": [
+            80,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "type": "Box2DPhysicsComponent",
+          "isDynamic": false,
+          "restitution": 0.0
+        }
+      ]
+    },
+    {
+      "type": "Actor",
+      "name": "fire",
+      "tag": [
+        "Fire"
+      ],
+      "prototype": true,
+      "persistent": true,
+      "transform": {
+        "scale": 4
+      },
+      "components": [
+        {
+          "type": "TextureAnimationComponent",
+          "animationName": "idle",
+          "animations": [
+            {
+              "name": "idle",
+              "textureName": "images/8bittiles.png",
+              "fps": 16,
+              "loop": true,
+              "numColumns": 12,
+              "numRows": 8,
+              "startFrame": 75,
+              "endFrame": 78
+            }
+          ]
+        },
+        {
+          "type": "Box2DPhysicsComponent",
+          "isDynamic": false,
+          "restitution": 0.0
+        }
+      ]
+    },
+    {
+      "type": "Actor",
+      "name": "room1",
+      "prototype": true,
       "transform": {
         "position": [
           32,
@@ -66,21 +315,38 @@
       "components": [
         {
           "type": "TilemapComponent",
-          "numColumns": 13,
-          "numRows": 10,
+          "numColumns": 15,
+          "numRows": 15,
           "tileSize": [ 64, 64 ],
-          "tileNames": [ "", "tile01", "tile02" ],
+          "tileNames": [
+            "",
+            "rocklcorner",
+            "rockmid",
+            "rockrcorner",
+            "rocklwall",
+            "rockrwall",
+            "rocklcornerwall",
+            "rockrcornerwall",
+            "dirt",
+            "gold",
+            "fire"
+          ],
           "tiles": [
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0,
-            0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 2,
-            2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            4, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0,
+            4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            4, 0, 0, 0, 0, 0, 0, 0, 9, 9, 0, 0, 0, 0, 0,
+            4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            4, 0, 0, 9, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0,
+            4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9,
+            4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9,
+            4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9,
+            4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9,
+            4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9,
+            8, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 10, 10, 10, 1,
+            8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8
           ]
         }
       ]

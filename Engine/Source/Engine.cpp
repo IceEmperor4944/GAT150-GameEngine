@@ -11,7 +11,7 @@ bool Engine::Initialize() {
     m_physics = std::make_unique<Physics>();
 
     m_renderer->Initialize();
-    m_renderer->CreateWindow("GameEngine", 1000, 1000);
+    m_renderer->CreateWindow("GameEngine", 960, 960);
     m_input->Initialize();
     m_audio->Initialize();
     m_physics->Initialize();

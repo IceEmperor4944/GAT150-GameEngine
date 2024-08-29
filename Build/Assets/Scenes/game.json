@@ -3,8 +3,9 @@
     {
       "name": "background",
       "persistent": true,
+      "prototype": false,
       "transform": {
-        "position": [ 500, 500 ],
+        "position": [ 480, 480 ],
         "rotation": 0,
         "scale": 2
       },
@@ -17,12 +18,15 @@
     },
     {
       "name": "player",
+      "tag": [
+        "Player"
+      ],
       "persistent": true,
-      "prototype": false,
+      "prototype": true,
       "transform": {
-        "position": [ 60, 60 ],
+        "position": [ 100, 100 ],
         "rotation": 0,
-        "scale": 1
+        "scale": 4
       },
       "components": [
         {
@@ -31,21 +35,58 @@
           "animations": [
             {
               "name": "idle",
-              "fps": 12,
-              "numColumns": 4,
-              "numRows": 1,
+              "fps": 8,
+              "numColumns": 2,
+              "numRows": 3,
               "startFrame": 1,
-              "endFrame": 4,
-              "textureName": "images/idle.png"
+              "endFrame": 6,
+              "textureName": "images/peakGirlIdle.png"
             },
             {
               "name": "walk",
-              "fps": 12,
-              "numColumns": 7,
-              "numRows": 1,
+              "fps": 8,
+              "numColumns": 3,
+              "numRows": 3,
+              "startFrame": 1,
+              "endFrame": 8,
+              "textureName": "images/peakGirlRun.png"
+            },
+            {
+              "name": "death",
+              "fps": 8,
+              "numColumns": 3,
+              "numRows": 3,
+              "startFrame": 1,
+              "endFrame": 8,
+              "textureName": "images/peakGirlDie.png"
+            },
+            {
+              "name": "jump",
+              "fps": 8,
+              "loop": false,
+              "numColumns": 3,
+              "numRows": 4,
+              "startFrame": 1,
+              "endFrame": 12,
+              "textureName": "images/peakGirlJump.png"
+            },
+            {
+              "name": "dash",
+              "fps": 8,
+              "numColumns": 3,
+              "numRows": 3,
               "startFrame": 1,
               "endFrame": 7,
-              "textureName": "images/walk.png"
+              "textureName": "images/peakGirlDash.png"
+            },
+            {
+              "name": "slide",
+              "fps": 8,
+              "numColumns": 1,
+              "numRows": 2,
+              "startFrame": 1,
+              "endFrame": 2,
+              "textureName": "images/peakGirlSlide.png"
             }
           ]
         },
@@ -58,17 +99,21 @@
           "constrainAngle": true,
           "restitution": 0.1,
           "shape": "capsule",
-          "size": [ 32, 64 ]
+          "size": [ 16, 16 ]
         },
         {
           "type": "CharacterComponent",
-          "speed": 200,
-          "jumpHeight": 300
+          "speed": 500,
+          "jumpHeight": 400,
+          "dashMod": 4
         }
       ]
     },
     {
       "name": "bat",
+      "tag": [
+        "Enemy"
+      ],
       "prototype": true,
       "transform": {
         "position": [ 560, 400 ],
@@ -82,15 +127,34 @@
           "animations": [
             {
               "name": "idle",
-              "textureName": "images/bat.png",
+              "textureName": "images/ghost-idle.png",
               "fps": 10,
               "loop": true,
-              "numColumns": 4,
+              "numColumns": 7,
               "numRows": 1,
               "startFrame": 1,
-              "endFrame": 4
+              "endFrame": 7
             }
           ]
+        },
+        {
+          "type": "EnemyComponent",
+          "speed": 500
+        }
+      ]
+    },
+    {
+      "name": "start",
+      "prototype": true,
+      "transform": {
+        "position": [ 500, 500 ],
+        "rotation": 0,
+        "scale": 5
+      },
+      "components": [
+        {
+          "type": "TextureComponent",
+          "textureName": "images/title.png"
         }
       ]
     }

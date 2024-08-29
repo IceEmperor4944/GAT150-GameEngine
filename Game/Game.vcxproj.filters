@@ -29,6 +29,9 @@
     <ClCompile Include="Source\Components\CharacterComponent.cpp">
       <Filter>Source\Components</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Components\EnemyComponent.cpp">
+      <Filter>Source\Components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Build\Assets\Scenes\scene.json">
@@ -53,6 +56,9 @@
       <Filter>Source</Filter>
     </ClInclude>
     <ClInclude Include="Source\Components\CharacterComponent.h">
+      <Filter>Source\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\EnemyComponent.h">
       <Filter>Source\Components</Filter>
     </ClInclude>
   </ItemGroup>
