@@ -1,2 +1,38 @@
-﻿  Scene.cpp
+﻿  Audio.cpp
+  AudioClip.cpp
+  AudioSource.cpp
+  AudioComponent.cpp
+  Box2DPhysicsComponent.cpp
+  CircleCollisionComponent.cpp
+  EnginePhysicsComponent.cpp
+  PhysicsComponent.cpp
+  TextComponent.cpp
+  TextureAnimationComponent.cpp
+  TextureComponent.cpp
+  TilemapComponent.cpp
+  EAssert.cpp
+  EFile.cpp
+  EString.cpp
+  ETime.cpp
+  Json.cpp
+  Engine.cpp
+  EventSystem.cpp
+  Observer.cpp
+  Generating Code...
+  Compiling...
+  Actor.cpp
+  Object.cpp
+  Scene.cpp
+  Input.cpp
+  Transform.cpp
+  Physics.cpp
+  RigidBody.cpp
+  Font.cpp
+  Model.cpp
+  Particle.cpp
+  ParticleSystem.cpp
+  Renderer.cpp
+  Text.cpp
+  Texture.cpp
+  Generating Code...
   Engine.vcxproj -> C:\Users\nsears\source\repos\GAT150-GameEngine\Bin\Engine\Debug\Engine.lib

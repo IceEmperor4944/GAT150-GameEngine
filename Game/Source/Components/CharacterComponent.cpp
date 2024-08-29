@@ -32,7 +32,7 @@ void CharacterComponent::Update(float dt) {
 		jumpTimer = 20.0f;
 	}
 
-	/*//dash
+	//dash
 	dashDuration = (dashDuration - 1 < 0) ? dashDuration - 1 : 0;
 	dashCountdown = (dashCountdown - 1 < 0) ? dashCountdown - 1 : 0;
 
@@ -40,24 +40,35 @@ void CharacterComponent::Update(float dt) {
 	else if (wallCount) direction.y = (direction.y + dt < 2) ? direction.y + dt : 2.0f;
 	else direction.y += dt;
 
+	float vel;
+
 	switch (dashDuration) {
-	case 5:
-		direction.y = -dashMod * speed * 0.5f;
+	case 5: {
+		vel = -dashMod * speed * 0.5f;
+		physics->SetVelocity({ vel, vel });
+	}
 		break;
-	case 3:
-		direction.y = -dashMod * speed * 0.5f;
+	case 3: {
+		vel = -dashMod * speed * 0.5f;
+		physics->SetVelocity({ vel, vel });
+	}
 		break;
 	case 2:
-		direction.y = -dashMod * speed;
+	{
+		vel = -dashMod * speed;
+		physics->SetVelocity({ vel, vel });
+	}
 		break;
-	case 1:
-		direction.y = -dashMod * speed * 2.0f;;
+	case 1: {
+		vel = -dashMod * speed * 2.0f;
+		physics->SetVelocity({ vel, vel });
+	}
 		break;
 	}
 
 	if ((wallCount || groundCount) && (!hasDashed && owner->scene->engine->GetInput().GetKeyDown(SDL_SCANCODE_X))) {
 		dashDuration = 100;
-		physics->ApplyForce(direction * speed * dashMod);
+		physics->SetVelocity(direction * speed * dashMod);
 		hasDashed = true;
 		dashCountdown = 50;
 		isDash = true;
@@ -69,7 +80,7 @@ void CharacterComponent::Update(float dt) {
 
 	if (wallCount) {
 		hasDashed = false;
-	}*/
+	}
 
 	//ANIMATION
 	if (physics->velocity.x < -0.1f) animation->hflip = true;

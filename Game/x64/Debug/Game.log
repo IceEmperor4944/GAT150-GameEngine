@@ -1,1 +1,8 @@
-﻿  Game.vcxproj -> C:\Users\nsears\source\repos\GAT150-GameEngine\x64\Debug\Game.exe
+﻿  CharacterComponent.cpp
+  EnemyComponent.cpp
+  PlayerComponent.cpp
+  RocketComponent.cpp
+  Main.cpp
+  SpaceGame.cpp
+  Generating Code...
+  Game.vcxproj -> C:\Users\nsears\source\repos\GAT150-GameEngine\x64\Debug\Game.exe

@@ -1,9 +1,11 @@
 c:\users\nsears\source\repos\gat150-gameengine\game\x64\debug\vc143.pdb
 c:\users\nsears\source\repos\gat150-gameengine\game\x64\debug\vc143.idb
-c:\users\nsears\source\repos\gat150-gameengine\game\x64\debug\main.obj
-c:\users\nsears\source\repos\gat150-gameengine\game\x64\debug\playercomponent.obj
-c:\users\nsears\source\repos\gat150-gameengine\game\x64\debug\rocketcomponent.obj
 c:\users\nsears\source\repos\gat150-gameengine\game\x64\debug\spacegame.obj
+c:\users\nsears\source\repos\gat150-gameengine\game\x64\debug\main.obj
+c:\users\nsears\source\repos\gat150-gameengine\game\x64\debug\rocketcomponent.obj
+c:\users\nsears\source\repos\gat150-gameengine\game\x64\debug\playercomponent.obj
+c:\users\nsears\source\repos\gat150-gameengine\game\x64\debug\charactercomponent.obj
+c:\users\nsears\source\repos\gat150-gameengine\game\x64\debug\enemycomponent.obj
 c:\users\nsears\source\repos\gat150-gameengine\x64\debug\game.exe
 c:\users\nsears\source\repos\gat150-gameengine\x64\debug\game.pdb
 c:\users\nsears\source\repos\gat150-gameengine\game\x64\debug\game.ilk
